@@ -5,6 +5,13 @@ Deep learning project for enhancing elemental images such as created by LA-ICP-M
 ## Training set preparation
 All original images were crappyfied by simulation of laser ablation [[1]](https://pubs.acs.org/doi/10.1021/ac1014832)
 
+**LA conditions**
+Parameter | Value
+--- | --- 
+Beam size | 5 μm
+Concentration | 100 μg/g
+Repetition rate | 100 Hz
+
 *TODO: describe process of simulated laser ablation
 
 ## Model
