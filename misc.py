@@ -10,7 +10,7 @@ def prediction_to_image(arr):
     arr : ndarray 
         rgb image in array form to be converted """
         
-    arr = np.squeeze((img_pr[0]+img_pr[1]+img_pr[2])/3)
+    arr = np.squeeze((arr[0]+arr[1]+arr[2])/3)
     arr = arr/arr.max()*255
     im = PIL.Image.fromarray(np.uint8(arr))
     return im
