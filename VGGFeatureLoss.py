@@ -4,6 +4,7 @@ from fastai.callbacks import *
 from fastai.utils.mem import *
 
 from torchvision.models import vgg16_bn
+from skimage.measure import compare_ssim
 
 def gram_matrix(x):
     n,c,h,w = x.size()
@@ -26,7 +27,7 @@ class VGG16FeatureLoss(nn.Module):
 
         self.hooks = hook_outputs(self.loss_features, detach=False)
         self.wgts = lyrs_wgts
-        self.metric_names = ['l1_loss',] + [f'feat_{i}' for i in range(len(blocks[2:5]))
+        self.metric_names = ['LAD',] + [f'feat_{i}' for i in range(len(blocks[2:5]))
                 ] + [f'gram_{i}' for i in range(len(blocks[2:5]))]
 
     def make_features(self, x, clone=False):
@@ -38,6 +39,7 @@ class VGG16FeatureLoss(nn.Module):
         in_feat = self.make_features(input)
         # base l1 loss
         self.feat_losses = [F.l1_loss(input,target)]
+        
         # feature loss
         self.feat_losses += [F.l1_loss(f_in, f_out)*w
                             for f_in, f_out, w in zip(in_feat, out_feat, self.wgts)]
@@ -50,5 +52,4 @@ class VGG16FeatureLoss(nn.Module):
 
     def __del__(self):
             self.hooks.remove()
-
 
