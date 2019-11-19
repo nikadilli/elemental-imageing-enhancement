@@ -6,6 +6,7 @@ Deep learning project for enhancing elemental images such as created by LA-ICP-M
 All original images were crappyfied by simulation of laser ablation [[1]](https://pubs.acs.org/doi/10.1021/ac1014832)
 
 **LA conditions**
+
 Parameter | Value
 --- | --- 
 Beam size | 5 μm
