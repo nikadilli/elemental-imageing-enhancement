@@ -104,7 +104,7 @@ venv.bak/
 .mypy_cache/
 
 # data folder
-!test_data/test/
-!test_data/cellsLR/B02_s1_**.png
-!test_data/cellsHR/B02_s1_**.png
+!test_data/test/*
+!test_data/cellsLR/B02_s1_**
+!test_data/cellsHR/B02_s1_**
 test_data/*/
