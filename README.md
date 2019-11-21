@@ -26,6 +26,12 @@ This deep learning model was build using the great [fast.ai](https://www.fast.ai
 
 The model was finetuned on different datasets. In future we plan to explore different conditions of laser ablation, as well as creating specialized models for biological or geological samples. 
 
+**Model-pets**
+This model was trained using the subset of imagenet containing pets from fast.ai. This was the first model, just to test how the neurall network handles laser ablation data. This weights are not meant to be used for real ablation, since the dataset contains pictures of cats and dogs.
+
+**Model-cells**
+This model was trained using the [Recursion Cellular Image dataset](https://www.rxrx.ai). The pretrained weights are available  [here](https://www.dropbox.com/s/aa7fqv4sypb0ecy/model.pth).
+
 ## Results
 
 **Example images from cell dataset**
@@ -38,4 +44,4 @@ The model was finetuned on different datasets. In future we plan to explore diff
 
 [[1]](https://pubs.rsc.org/en/content/articlehtml/2019/ja/c9ja00166b) van Elteren, J.T., Šelih, V.S. and Šala, M., 2019. Insights into the selection of 2D LA-ICP-MS (multi) elemental mapping conditions. Journal of Analytical Atomic Spectrometry, 34(9), pp.1919-1931.
 
-[[2]] (https://arxiv.org/pdf/1505.04597.pdf) Ronneberger, O., Fischer, P. and Brox, T., 2015, October. U-net: Convolutional networks for biomedical image segmentation. In International Conference on Medical image computing and computer-assisted intervention (pp. 234-241). Springer, Cham.
+[[2]](https://arxiv.org/pdf/1505.04597.pdf) Ronneberger, O., Fischer, P. and Brox, T., 2015, October. U-net: Convolutional networks for biomedical image segmentation. In International Conference on Medical image computing and computer-assisted intervention (pp. 234-241). Springer, Cham.
