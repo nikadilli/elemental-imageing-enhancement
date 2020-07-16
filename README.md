@@ -1,4 +1,4 @@
-[a](/apm/l/:packageName)
+![a](/apm/l/:packageName)
 
 # Enhancement of the elemental imaging
 
