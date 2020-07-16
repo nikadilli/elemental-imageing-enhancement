@@ -1,4 +1,5 @@
-![a](/apm/l/:packageName)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![DOI](https://zenodo.org/badge/220480843.svg)](https://zenodo.org/badge/latestdoi/220480843)
 
 # Enhancement of the elemental imaging
 
