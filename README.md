@@ -1,3 +1,5 @@
+[a](/apm/l/:packageName)
+
 # Enhancement of the elemental imaging
 
 **Elemental imaging** is visualization of the distribution of elements of interest within solid samples. It is widely used across different fields analyzing various materials by many analytical techniques. With destructive methods, such as LA-ICP-MS or LIBS, where the sample is ablated by laser beam spot, by spot, we get pixelated image where the resolution is dependant on the beam size. Decreasing the beam size infinitely is not possible, which leads us to image enhancement by computers.
